@@ -16,31 +16,31 @@ export default function Settings() {
         <div className="space-y-6">
           {/* Username */}
           <div>
-            <label className="block text-lg font-medium text-gray-600 dark:text-gray-300 mb-2">Username</label>
+            <label className="block text-lg font-medium text-gray-600 dark:text-gray-300 mb-2">Benutzername</label>
             <input
               type="text"
               className="w-full p-4 bg-gray-100 dark:bg-gray-700 dark:text-gray-300 text-gray-800 rounded-lg shadow-md focus:ring-2 focus:ring-purple-500 dark:focus:ring-teal-300 transition-all duration-300 transform hover:scale-105"
-              placeholder="Enter your username"
+              placeholder="Gebe deinen Benutzername ein"
             />
           </div>
 
           {/* Email */}
           <div>
-            <label className="block text-lg font-medium text-gray-600 dark:text-gray-300 mb-2">Email</label>
+            <label className="block text-lg font-medium text-gray-600 dark:text-gray-300 mb-2">E-Mail</label>
             <input
               type="email"
               className="w-full p-4 bg-gray-100 dark:bg-gray-700 dark:text-gray-300 text-gray-800 rounded-lg shadow-md focus:ring-2 focus:ring-purple-500 dark:focus:ring-teal-300 transition-all duration-300 transform hover:scale-105"
-              placeholder="Enter your email"
+              placeholder="Gebe deine E-mail ein"
             />
           </div>
 
           {/* Password */}
           <div>
-            <label className="block text-lg font-medium text-gray-600 dark:text-gray-300 mb-2">Password</label>
+            <label className="block text-lg font-medium text-gray-600 dark:text-gray-300 mb-2">Passwort</label>
             <input
               type="password"
               className="w-full p-4 bg-gray-100 dark:bg-gray-700 dark:text-gray-300 text-gray-800 rounded-lg shadow-md focus:ring-2 focus:ring-purple-500 dark:focus:ring-teal-300 transition-all duration-300 transform hover:scale-105"
-              placeholder="Enter your password"
+              placeholder="Gebe dein Passwort ein"
             />
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function Settings() {
         <div className="mt-8">
           <button className="w-full py-4 px-6 bg-gradient-to-r from-purple-600 to-teal-400 dark:from-indigo-700 dark:to-teal-500 text-white font-semibold rounded-lg shadow-xl transform hover:scale-105 transition-all duration-200 hover:shadow-2xl flex items-center justify-center">
             <FaSave className="mr-3" />
-            Save Settings
+            Speichern Settings
           </button>
         </div>
       </div>
