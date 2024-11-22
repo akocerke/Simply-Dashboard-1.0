@@ -19,10 +19,10 @@ export default function UserData() {
   }, []);
 
   return (
-    <div className="flex items-center space-x-4 text-gray-800 dark:text-gray-200 pr-4">
+    <div className="flex items-center space-x-4 text-gray-800 dark:text-gray-200">
       {/* DaisyUI Avatar mit Online-Offline Status */}
       <div className="avatar">
-        <div className="w-8 rounded-full">
+        <div className="w-10 rounded-full">
           {/* Bild oder Initialen (kann hier durch eine URL oder Initialen ersetzt werden) */}
           <img src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.webp" alt={username} />
         </div>

@@ -18,6 +18,6 @@ module.exports = {
     require('daisyui'),
   ],
   daisyui: {
-    themes: ["light", "dark", "synthwave"], // Aktiviert DaisyUI-Themes
+    themes: ["light", "dark", "synthwave"],
   },
 };

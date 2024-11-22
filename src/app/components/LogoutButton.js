@@ -15,12 +15,11 @@ export default function LogoutButton() {
 
   return (
     <button
-  onClick={handleLogout}
-  className="flex items-center text-sm text-gray-400 dark:text-gray-600 dark:hover:text-teal-300 hover:text-cyan-400 pr-4"
->
-  <RiLogoutCircleLine size={24} className="mr-2" />
-  <span>Logout</span>
-</button>
-
+      onClick={handleLogout}
+      className="flex items-center text-sm text-gray-600 dark:text-gray-400 dark:hover:text-teal-300 hover:text-cyan-400 pr-4 duration-300"
+    >
+      <RiLogoutCircleLine size={24} className="mr-2" />
+      <span>Logout</span>
+    </button>
   );
 }

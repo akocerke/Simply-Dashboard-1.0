@@ -5,7 +5,7 @@ import { IoIosMenu } from "react-icons/io";
 import { FaChartSimple } from "react-icons/fa6";
 import { RiUserSettingsLine } from "react-icons/ri";
 import LogoutButton from "../components/LogoutButton";
-import UserData from "../components/UserData";
+import UserData from "../components/user/UserData";
 
 export const metadata = {
   title: "Dashboard",
@@ -19,12 +19,17 @@ export default function DashboardLayout({ children }) {
       <aside className="w-64 bg-gray-800 text-gray-100 p-4 hidden lg:block">
         <nav>
           <ul className="space-y-4">
+            {/* Allgemeine Links */}
+            <li>
+              <h3 className="text-lg font-semibold text-gray-400 dark:text-gray-500">Allgemein</h3>
+            </li>
             <li>
               <a
                 href="/"
                 className="py-2 px-4 rounded hover:bg-gray-700 flex items-center"
               >
                 <IoHomeOutline size={24} className="mr-2" />
+                Startseite
               </a>
             </li>
             <li>
@@ -33,7 +38,13 @@ export default function DashboardLayout({ children }) {
                 className="py-2 px-4 rounded hover:bg-gray-700 flex items-center"
               >
                 <LuLayoutDashboard size={24} className="mr-2" />
+                Dashboard
               </a>
+            </li>
+
+            {/* Statistiken */}
+            <li>
+              <h3 className="text-lg font-semibold text-gray-400 dark:text-gray-500">Statistiken</h3>
             </li>
             <li>
               <a
@@ -41,7 +52,13 @@ export default function DashboardLayout({ children }) {
                 className="py-2 px-4 rounded hover:bg-gray-700 flex items-center"
               >
                 <FaChartSimple size={24} className="mr-2" />
+                Statistiken
               </a>
+            </li>
+
+            {/* Benutzer */}
+            <li>
+              <h3 className="text-lg font-semibold text-gray-400 dark:text-gray-500">Benutzer</h3>
             </li>
             <li>
               <a
@@ -49,9 +66,9 @@ export default function DashboardLayout({ children }) {
                 className="py-2 px-4 rounded hover:bg-gray-700 flex items-center"
               >
                 <RiUserSettingsLine size={24} className="mr-2" />
+                Einstellungen
               </a>
             </li>
-            {/* Weitere Links */}
           </ul>
         </nav>
       </aside>
@@ -59,22 +76,29 @@ export default function DashboardLayout({ children }) {
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
         {/* Navbar */}
-        <header className="bg-gray-800 p-4 text-white shadow">
-          <div class="grid grid-cols-1 gap-4 w-full">
-            <div>
-              <h1 className=" text-start text-3xl font-bold">Dashboard</h1>
+        <header className="bg-gray-800 p-4 text-white shadow-md">
+          <div className="flex justify-between items-center w-full">
+            {/* Dashboard Title */}
+            <div className="flex items-center">
+              <h1 className="text-3xl font-bold text-start">Dashboard</h1>
             </div>
 
-            <div className="pt-2">
+            {/* Dark/Light Mode */}
+            <div className="flex items-center">
               <DarkLightMode />
             </div>
-            <div class="grid grid-cols-subgrid gap-4 col-span-3 pt-4">
-              <div class="col-start-1">
-                <UserData />
-              </div>
-              <div class="col-start-2">
-                <LogoutButton />
-              </div>
+          </div>
+
+          {/* User Info and Logout */}
+          <div className="flex justify-between items-center pt-4">
+            {/* User Data */}
+            <div className="flex items-center space-x-4">
+              <UserData />
+            </div>
+
+            {/* Logout Button */}
+            <div className="flex items-center">
+              <LogoutButton />
             </div>
           </div>
         </header>
@@ -105,12 +129,14 @@ export default function DashboardLayout({ children }) {
         <label htmlFor="my-drawer" className="drawer-overlay"></label>
         <nav className="menu bg-gray-800 p-4 text-gray-100">
           <ul className="space-y-4">
+            {/* Mobile Version */}
             <li>
               <a
                 href="/"
                 className="py-2 px-4 rounded hover:bg-gray-700 flex items-center"
               >
                 <IoHomeOutline size={24} className="mr-2" />
+                Startseite
               </a>
             </li>
             <li>
@@ -119,6 +145,7 @@ export default function DashboardLayout({ children }) {
                 className="py-2 px-4 rounded hover:bg-gray-700 flex items-center"
               >
                 <LuLayoutDashboard size={24} className="mr-2" />
+                Dashboard
               </a>
             </li>
             <li>
@@ -127,6 +154,7 @@ export default function DashboardLayout({ children }) {
                 className="py-2 px-4 rounded hover:bg-gray-700 flex items-center"
               >
                 <FaChartSimple size={24} className="mr-2" />
+                Statistiken
               </a>
             </li>
             <li>
@@ -135,6 +163,7 @@ export default function DashboardLayout({ children }) {
                 className="py-2 px-4 rounded hover:bg-gray-700 flex items-center"
               >
                 <RiUserSettingsLine size={24} className="mr-2" />
+                Einstellungen
               </a>
             </li>
             {/* Weitere Links */}

@@ -49,7 +49,7 @@ export default function Settings() {
         <div className="mt-8">
           <button className="w-full py-4 px-6 bg-gradient-to-r from-purple-600 to-teal-400 dark:from-indigo-700 dark:to-teal-500 text-white font-semibold rounded-lg shadow-xl transform hover:scale-105 transition-all duration-200 hover:shadow-2xl flex items-center justify-center">
             <FaSave className="mr-3" />
-            Speichern Settings
+            Speichern
           </button>
         </div>
       </div>

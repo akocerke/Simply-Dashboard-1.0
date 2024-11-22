@@ -42,12 +42,12 @@ const StatisticCardWithChart = ({ title, description, chartData }) => {
   };
 
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-lg shadow p-6 transition-transform transform hover:scale-105">
+    <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105">
       <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-100">{title}</h3>
       <p className="text-gray-600 dark:text-gray-300">{description}</p>
       <div className="mt-4">
         {/* Diagramm einfügen */}
-        <Bar data={data} options={options} />
+        <Bar data={data} options={options}/>
       </div>
     </div>
   );

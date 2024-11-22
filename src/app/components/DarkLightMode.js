@@ -1,13 +1,16 @@
+// app/components/DarkLightMode.js
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useLayoutEffect } from "react";
 import { IoSunnyOutline, IoMoonOutline } from "react-icons/io5";
 
 export default function DarkLightMode() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   // Synchronisiert den Theme-Zustand beim Laden der Seite
-  useEffect(() => {
-    if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+  useLayoutEffect(() => {
+    // Überprüfe das gespeicherte Theme oder nutze das System-Theme
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
       document.documentElement.classList.add("dark");
       document.documentElement.setAttribute("data-theme", "synthwave");
       setIsDarkMode(true);
@@ -16,20 +19,23 @@ export default function DarkLightMode() {
       document.documentElement.setAttribute("data-theme", "light");
       setIsDarkMode(false);
     }
-  }, []);
+  }, []); // Diese Logik nur beim initialen Laden ausführen
 
   // Umschaltfunktion für Dark/Light Mode
   const toggleTheme = () => {
-    setIsDarkMode(!isDarkMode);
-    if (!isDarkMode) {
-      document.documentElement.classList.add("dark");
-      document.documentElement.setAttribute("data-theme", "synthwave"); // Synthwave aktivieren
-      localStorage.theme = "dark";
-    } else {
-      document.documentElement.classList.remove("dark");
-      document.documentElement.setAttribute("data-theme", "light"); // Standard Light Mode
-      localStorage.theme = "light";
-    }
+    setIsDarkMode((prevMode) => {
+      const newMode = !prevMode;
+      if (newMode) {
+        document.documentElement.classList.add("dark");
+        document.documentElement.setAttribute("data-theme", "synthwave");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+        document.documentElement.setAttribute("data-theme", "light");
+        localStorage.setItem("theme", "light");
+      }
+      return newMode;
+    });
   };
 
   return (
