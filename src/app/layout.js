@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import { NavbarWrapper } from "./components/NavbarWrapper";
+import ToasterMessage from "./components/ToasterMessage";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -23,7 +25,15 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <NavbarWrapper />
+        <ToasterMessage />
+        <main
+          className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white 
+  dark:bg-gradient-to-r dark:from-indigo-900 dark:to-purple-900 dark:text-gray-300 
+  dark:transition-all dark:duration-500 dark:ease-in-out"
+        >
+          {children}
+        </main>
       </body>
     </html>
   );
