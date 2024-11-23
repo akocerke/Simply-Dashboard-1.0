@@ -2,6 +2,39 @@
 
 Ein modernes, einfaches Dashboard-Projekt mit **Next.js 15** und der neuen **App Router**-Architektur. Perfekt für intuitive Dashboards mit optimierten und modularen Komponenten.
 
+## 📸 Screenshots
+
+### 🌟 App-Hauptseite (Light Mode)
+Zeigt die Einstiegsseite der App mit ihrem minimalistischen und modernen Design.
+
+![APP-Page](image.png)
+
+---
+
+### 🔐 Login-Seite (Light Mode)
+Das Login-Formular, gestaltet für eine einfache und ansprechende Anmeldung.
+
+![Login-Page](image1.png)
+
+---
+
+### 📊 Dashboard-Ansicht (Light Mode)
+Ein Überblick über das Dashboard mit dynamischen Widgets und Datenvisualisierungen.
+
+#### Übersicht
+![Dashboard-page](image2.png)
+
+#### Statistik-Widgets
+Zeigt Diagramme und Metriken in Echtzeit.
+
+![Dashboard-Statistik](image3.png)
+
+#### Einstellungen
+Anpassungsoptionen für Benutzer.
+
+![Dashboard-Einstellungen](image4.png)
+
+
 ## 🚀 Features
 
 - **Next.js 15 App Router**: Die neueste Version von Next.js mit verbesserter Struktur und Serverkomponenten.
@@ -81,39 +114,4 @@ Das Projekt nutzt **TailwindCSS** und **DaisyUI** für effizientes Styling und b
 - **Chart.js** (4.4.6)
 
 Dein Ansatz mit den Bildern ist bereits gut durchdacht! Damit die Darstellung in der README sauber und strukturiert wirkt, kannst du die Abschnitte leicht verbessern, indem du etwas Kontext oder Unterüberschriften hinzufügst. Hier ist eine optimierte Version:
-
----
-
-## 📸 Screenshots
-
-### 🌟 App-Hauptseite (Light Mode)
-Zeigt die Einstiegsseite der App mit ihrem minimalistischen und modernen Design.
-
-![APP-Page](image.png)
-
----
-
-### 🔐 Login-Seite (Light Mode)
-Das Login-Formular, gestaltet für eine einfache und ansprechende Anmeldung.
-
-![Login-Page](image1.png)
-
----
-
-### 📊 Dashboard-Ansicht (Light Mode)
-Ein Überblick über das Dashboard mit dynamischen Widgets und Datenvisualisierungen.
-
-#### Übersicht
-![Dashboard-page](image2.png)
-
-#### Statistik-Widgets
-Zeigt Diagramme und Metriken in Echtzeit.
-
-![Dashboard-Statistik](image3.png)
-
-#### Einstellungen
-Anpassungsoptionen für Benutzer.
-
-![Dashboard-Einstellungen](image4.png)
-
 
