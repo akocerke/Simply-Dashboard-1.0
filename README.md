@@ -34,6 +34,12 @@ Anpassungsoptionen für Benutzer.
 
 ![Dashboard-Einstellungen](image4.png)
 
+## 🌐 Live-Demo
+
+Sieh dir die **Live-Demo** des Projekts an:
+
+[Simply-Dashboard Live-Demo](https://simply-dashboard-v1.vercel.app/)
+
 
 ## 🚀 Features
 
