@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Simply-Dashboard
 
-## Getting Started
+Ein modernes, einfaches Dashboard-Projekt mit **Next.js 15** und der neuen **App Router**-Architektur. Perfekt für intuitive Dashboards mit optimierten und modularen Komponenten.
 
-First, run the development server:
+## 🚀 Features
+
+- **Next.js 15 App Router**: Die neueste Version von Next.js mit verbesserter Struktur und Serverkomponenten.
+- **Material-UI & TailwindCSS**: Kombination von Utility-first CSS und anpassbaren UI-Komponenten.
+- **Interaktive Diagramme**: Dank **Chart.js** und **react-chartjs-2**.
+- **Reibungslose Animationen**: Mit **AOS** für Scroll-Effekte.
+- **DaisyUI Themes**: Unterstützung für **Light**, **Dark** und **Synthwave**.
+- **Dark-/Light-Mode-Switch**: Speichert Benutzerpräferenzen.
+- **Benutzerfreundliche Benachrichtigungen**: Mit **React Toastify**.
+
+## 📂 Projektstruktur
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+📦 Simply-Dashboard-1.0
+├── 📁 .next             # Vom Build generierte Dateien
+├── 📁 node_modules      # Abhängigkeiten
+├── 📁 public            # Statische Dateien (Bilder, Fonts, Icons)
+├── 📁 src
+│   ├── 📁 app           # Hauptstruktur der App
+│   │   ├── 📁 about     # Info-Seite
+│   │   ├── 📁 dashboard # Dashboard-Seite
+│   │   ├── 📁 login     # Login-Seite
+│   │   └── 📄 layout.js # Globale Layout-Datei
+│   │   └── 📄 page.js   # Einstiegsseite
+│   ├── 📁 components    # Wiederverwendbare UI-Komponenten
+│   ├── 📁 data          # Beispiel-Daten oder APIs
+│   ├── 📁 fonts         # Schriftarten
+│   └── 📄 globals.css   # Globale Styles
+├── 📄 jsconfig.json      # JavaScript-Konfiguration
+├── 📄 next.config.mjs    # Next.js-Konfigurationsdatei
+├── 📄 package.json       # Projekt- und Abhängigkeitsverwaltung
+└── 📄 .gitignore         # Dateien, die von Git ignoriert werden
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Installation und Nutzung
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+1. **Abhängigkeiten installieren**:
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Entwicklungsserver starten**:
+   ```bash
+   npm run dev
+   ```
 
-## Learn More
+3. **Anwendung öffnen**:
+   Im Browser zu `http://localhost:3000` navigieren.
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Styling und Themes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Das Projekt nutzt **TailwindCSS** und **DaisyUI** für effizientes Styling und bietet eine Auswahl an Themes, die leicht gewechselt werden können. Benutzer können zwischen **Light**, **Dark** und **Synthwave** umschalten, wobei die Präferenz gespeichert wird.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Dynamisches Umschalten**: Der Dark-/Light-Mode-Switch aktualisiert die UI in Echtzeit.
+- **Vorkonfigurierte Themes**: Direkt einsatzbereit, ohne zusätzliche Anpassungen.
 
-## Deploy on Vercel
+## 📊 Funktionen und Komponenten
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Dashboard-Seite
+- **Dynamische Widgets**: Interaktive Diagramme und Karten mit **Chart.js**.
+- **Profile und Benutzerverwaltung**: Minimalistischer Avatar für Benutzeridentifikation.
+- **Scroll-Animationen**: Verbesserte Nutzererfahrung durch sanfte Animationen mit **AOS**.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Login-Seite
+- Einfaches Formular für die Benutzeranmeldung mit responsivem Design und Dummy-Daten für eine schnelle Demo.
+
+### Globale Layouts
+- Einheitliches Layout für konsistente Navigation und Styling.
+
+## 📚 Verwendete Technologien
+
+- **Next.js** (15.0.3) mit App Router
+- **React** (18.3.1)
+- **TailwindCSS** (3.4.1)
+- **DaisyUI** (4.12.14)
+- **Material-UI** (6.1.8)
+- **Chart.js** (4.4.6)
