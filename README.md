@@ -119,5 +119,3 @@ Das Projekt nutzt **TailwindCSS** und **DaisyUI** für effizientes Styling und b
 - **Material-UI** (6.1.8)
 - **Chart.js** (4.4.6)
 
-Dein Ansatz mit den Bildern ist bereits gut durchdacht! Damit die Darstellung in der README sauber und strukturiert wirkt, kannst du die Abschnitte leicht verbessern, indem du etwas Kontext oder Unterüberschriften hinzufügst. Hier ist eine optimierte Version:
-
